@@ -1,0 +1,45 @@
+<!--
+//////////////////////////
+////      SESSION     ////
+//// Автор – GSergeyP ////
+////   Версия 1.0.0   ////
+//////////////////////////
+-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="sessionAction"></div>
+<style>
+    #sessionAction{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+    }
+    .sessionClose{
+        padding-top: 2vw;
+        width: 25%;
+        height: 10vw;
+        border: slateblue solid 1px;
+        text-align: center;
+        font-size: 2vw;
+    }
+</style>
+<script type="text/javascript" src="./js/sessionCfg.js"></script><!--Базовые настройки-->
+<script type="text/javascript" src="./js/sessionClose.js"></script><!--Базовая страница, Окно ввода логина и пароля, Функция запуска-->
+<script type="text/javascript" src="./js/sessionOpen.js"></script><!--Страница авторизованного пользователя, Закрытая часть-->
+<script type="text/javascript" src="./js/sessionUpdate.js"></script><!--Принудительное обнавление сессии-->
+<script type="text/javascript" src="./js/sessionСonfirmation.js"></script><!--Проверка существования сессии-->
+<script type="text/javascript" src="./js/sendDataServer.js"></script><!--Активация/Закрытие сессии-->
+<script type="text/javascript" src="./js/sessionActionDelete.js"></script><!--Очистка id = sessionAction-->
+</body>
+</html>
